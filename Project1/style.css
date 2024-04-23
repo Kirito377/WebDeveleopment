@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --background-color: #0E0E0E;
+    --nav-item-selected: #A638FD;
+    --nav-item-unselected: #777777;
+    --nav-item-unselected: #777777;
+    --text-color: #FFFFFF;
+    --text-color-light: #FAFAFA;
+    --theme-switch-color: #FFFFFF;
+
+
+    /* GRADIENT COLORS */
+    --dark-grdient: linear-gradient(90deg, rgba(166,56,253,1) 0%, rgba(125,27,202,1) 100%);
+    --light-grdient: linear-gradient(90deg, rgba(166,56,253,1) 0%, rgba(193,114,255,1) 100%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+section{
+    height: 100vh;
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* *********************   NAV BAR   ********************* */
+
+
+.nav-bar{
+    position: fixed;
+    top: 0;
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.logo span{
+    font-size: 2.3rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    background-image: var(--dark-grdient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.menu .nav-items{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--nav-item-unselected);
+}
+
+.menu .nav-items:hover{
+    color: var(--nav-item-selected);
+}
+
+.menu-item-selected{
+    color: var(--nav-item-selected) !important;
+}
+
+.theme-switch{
+    border: 0.165rem solid var(--theme-switch-color);
+    color: var(--theme-switch-color);
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 50px;
+}
+
+.contact-button{
+    background: var(--dark-grdient);
+    color: var(--text-color);
+    padding: 0.7rem 1.8rem;
+    border-radius: 0.54rem;
+}
+
+
+
+/* *********************   HOME MENU   ********************* */
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-container{
+    /* background-color: red; */
+    padding-right: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.7rem;
+}
+
+.left-container h1{
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+.left-container .web-dev-text{
+    background: var(--light-grdient);
+    color: var(--text-color);
+    background-clip: text;
+    color: transparent;
+    font-size: 3.5rem;
+    line-height: 3.8rem;
+}
+
+.left-container p{
+    color: var(--text-color-light);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.buttons-container{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.hire-me-btn{
+    width: 12rem;
+    background: var(--dark-grdient);
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.8rem;
+    border-radius: 0.47rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-btn{
+    width: 12rem;
+    background: var(--dark-grdient);
+    padding: 0.125rem;
+    text-decoration: none;
+    border-radius: 0.47rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-btn div{
+    width: 100%;
+    border-radius: 0.47rem;
+    padding: 0.6rem;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-btn div p{
+    font-size: 1.2rem;
+    background: var(--dark-grdient);
+    color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+
+.right-container{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+}
+
+.right-container .img{
+    background: var(--dark-grdient);
+    width: 50%;
+    height: 100%;
+    border-radius: 2rem;
+    padding-left: 10rem;
+}
